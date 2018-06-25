@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<set xmlns:android="http://schemas.android.com/apk/res/android"
+    android:fillAfter="true">
+
+    <!--
+        android:fillAfter – This defines whether to apply the animation transformation
+        after the animation completes or not. If it sets to false the element changes
+        to its previous state after the animation. This attribute should be use with
+        <set> node-->
+
+    <!--
+        android:duration – Duration of the animation in which the animation
+        should complete
+    -->
+
+    <!--
+        For zoom use <scale> tag. Use pivotX=”50%” and pivotY=”50%” to perform
+        zoom from the center of the element. Also you need to use fromXScale,
+        fromYScale attributes which defines scaling of the object. Keep these
+        value lesser than toXScale, toYScale
+    -->
+
+    <scale xmlns:android="http://schemas.android.com/apk/res/android"
+        android:duration="500"
+        android:fromXScale="1.5"
+        android:fromYScale="1.5"
+        android:pivotX="50%"
+        android:pivotY="50%"
+        android:toXScale="1"
+        android:toYScale="1">
+
+    </scale>
+
+</set>
